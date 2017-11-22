@@ -9,6 +9,7 @@
     xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
     xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
     xmlns:local="clr-namespace:testDEVE" xmlns:Model="clr-namespace:testDEVE.Model"
+    xmlns:dxm="http://schemas.devexpress.com/winfx/2008/xaml/map"
     x:Class="testDEVE.UCNV" 
              mc:Ignorable="d"  >
     <Grid>
@@ -41,7 +42,7 @@
                             </dxg:GridControl>
                         </dxlc:LayoutGroup>
                         <dxlc:LayoutGroup Orientation="Vertical" VerticalAlignment="Top"  >
-                            <dxe:ImageEdit  Height="250" Name="image" ShowMenu="False" ShowLoadDialogOnClickMode="Never" Stretch="Fill"  />
+                            <dxe:ImageEdit  Height="250" x:Name="image" ShowMenu="False" ShowLoadDialogOnClickMode="Never" Width="Auto" Stretch="Uniform"  />
                             <dxlc:LayoutControl Orientation="Vertical">
                                 <dxlc:LayoutGroup>
                                     <dxlc:LayoutGroup x:Name="layoutGroup" Orientation="Vertical" VerticalAlignment="Top" Width="350">
@@ -51,7 +52,7 @@
                                         <dxlc:LayoutItem Label="Ngày Sinh:  " HorizontalAlignment="Center">
                                             <Label x:Name="lbns" Content="19/09/1994"/>
                                         </dxlc:LayoutItem>
-                                        
+
                                         <dxlc:LayoutItem Label="Địa chỉ:  " HorizontalAlignment="Center" LabelHorizontalAlignment="Center" >
                                             <Label x:Name="lbtdiachi" Content="An Giang"/>
                                         </dxlc:LayoutItem>
@@ -75,6 +76,7 @@
                 </Grid>
             </dxlc:LayoutControl>
         </DockPanel>
+
 
     </Grid>
 </UserControl>

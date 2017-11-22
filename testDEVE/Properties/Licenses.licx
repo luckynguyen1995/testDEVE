@@ -6,3 +6,4 @@ DevExpress.Xpf.Editors.ImageEdit, DevExpress.Xpf.Core.v17.1, Version=17.1.8.0, C
 DevExpress.Xpf.Grid.GridControl, DevExpress.Xpf.Grid.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
 DevExpress.Xpf.NavBar.NavBarControl, DevExpress.Xpf.NavBar.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
 DevExpress.Xpf.Docking.DockLayoutManager, DevExpress.Xpf.Docking.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.Xpf.Map.MapControl, DevExpress.Xpf.Map.v17.1, Version=17.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
