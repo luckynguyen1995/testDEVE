@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="REManagement" Class="dtbbdsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PHANLINH\RYANNGUYEN;Initial Catalog=REManagement;Integrated Security=True" SettingsObjectName="testDEVE.Properties.Settings" SettingsPropertyName="REManagementConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.NhanVien" Member="NhanViens">
+    <Type Name="NhanVien">
+      <Column Name="nvid" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tennv" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="gioitinh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="diachi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="doanhthu" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="quyen" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="hinh" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="taikhoan" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="matkhau" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="sdt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
