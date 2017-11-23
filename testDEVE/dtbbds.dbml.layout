@@ -2,11 +2,50 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dtbbds">
   <DataContextMoniker Name="/dtbbdsDataContext" />
   <nestedChildShapes>
-    <classShape Id="9a6fdc98-7d52-4598-815f-1f92dd0e7b20" absoluteBounds="1.375, 2, 2, 3.1170068359375">
-      <DataClassMoniker Name="/dtbbdsDataContext/NhanVien" />
+    <classShape Id="c75d2189-577c-4c3c-a035-6b95187690c4" absoluteBounds="6.25, 2.25, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/dtbbdsDataContext/BatDongSan" />
       <nestedChildShapes>
-        <elementListCompartment Id="2781cd70-7ed2-4e89-92bf-7ce0d75adab8" absoluteBounds="1.3900000000000001, 2.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="47e92688-1b6d-442b-8928-fd0eaaf4eb33" absoluteBounds="6.265, 2.71, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="f9c89f02-159b-4bf4-afd1-111eee8145c6" absoluteBounds="0.75, 2.75, 2, 3.1170068359374996">
+      <DataClassMoniker Name="/dtbbdsDataContext/NhanVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79ec1301-eee7-458c-96a9-b8371f7adf12" absoluteBounds="0.765, 3.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2fea8ef8-e428-4360-9fe1-f89891a52a86" absoluteBounds="3.5, 2.75, 2, 3.1170068359375">
+      <DataClassMoniker Name="/dtbbdsDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e727875-208b-4ebf-ad9f-574da7ccc66d" absoluteBounds="3.515, 3.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="75cb9e51-f647-461a-9a91-9a7b88a70a59" absoluteBounds="3.5, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/dtbbdsDataContext/LoaiBD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0950c210-cc9f-45af-bf67-581537fb15bb" absoluteBounds="3.515, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 4.30850341796875); (6.25 : 4.30850341796875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dtbbdsDataContext/KhachHang/KhachHang_BatDongSan" />
+      <nodes>
+        <classShapeMoniker Id="2fea8ef8-e428-4360-9fe1-f89891a52a86" />
+        <classShapeMoniker Id="c75d2189-577c-4c3c-a035-6b95187690c4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.30850341796875); (3.5 : 4.30850341796875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dtbbdsDataContext/NhanVien/NhanVien_KhachHang" />
+      <nodes>
+        <classShapeMoniker Id="f9c89f02-159b-4bf4-afd1-111eee8145c6" />
+        <classShapeMoniker Id="2fea8ef8-e428-4360-9fe1-f89891a52a86" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.34699625651042); (7.25 : 1.34699625651042); (7.25 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dtbbdsDataContext/LoaiBD/LoaiBD_BatDongSan" />
+      <nodes>
+        <classShapeMoniker Id="75cb9e51-f647-461a-9a91-9a7b88a70a59" />
+        <classShapeMoniker Id="c75d2189-577c-4c3c-a035-6b95187690c4" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

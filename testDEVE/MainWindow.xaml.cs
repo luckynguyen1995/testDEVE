@@ -66,5 +66,11 @@ namespace testDEVE
             
 
         }
+
+        private void biBDS_ItemClick(object sender, DevExpress.Xpf.Bars.ItemClickEventArgs e)
+        {
+            UCBatDongSan a = new UCBatDongSan();
+            usnv.Content = a;
+        }
     }
 }

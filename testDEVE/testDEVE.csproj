@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,7 +26,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -69,6 +69,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -91,7 +92,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dtbbds.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Model\BDSModelView.cs" />
+    <Compile Include="Model\KhachHangModelView.cs" />
     <Compile Include="Model\NhanVienModelView.cs" />
+    <Compile Include="UCBatDongSan.xaml.cs">
+      <DependentUpon>UCBatDongSan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCKH.xaml.cs">
+      <DependentUpon>UCKH.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UCNV.xaml.cs">
       <DependentUpon>UCNV.xaml</DependentUpon>
     </Compile>
@@ -110,6 +119,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UCBatDongSan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCKH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UCNV.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
